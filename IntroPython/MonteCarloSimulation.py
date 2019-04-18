@@ -1,0 +1,16 @@
+# LISTING 5.10 MonteCarloSimulation.py
+
+import random
+
+NUMBER_OF_TRIALS = 1000000
+numberOfHits = 0
+
+for i in range(NUMBER_OF_TRIALS):
+    x = random.random() * 2 - 1  # random.random()生成0-1.0的浮点数
+    y = random.random() * 2 - 1
+
+    if x * x + y * y <= 1:
+        numberOfHits += 1
+pi = 4 * numberOfHits / NUMBER_OF_TRIALS
+
+print("PI is", pi)
