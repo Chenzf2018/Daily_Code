@@ -9,7 +9,7 @@ public class ComputeFactorial
     {
         // Create a Scanner
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter a nonnegative integer: ");
+        System.out.print("Enter a non-negative integer: ");
         int n = input.nextInt();
         System.out.println("Factorial of " + n + " is " + factorial(n));
     }
